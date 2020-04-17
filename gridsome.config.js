@@ -12,9 +12,17 @@ module.exports = {
       options: {
         sheetId: '18Pratkg9OkN_N4mnU64o4gsMN2B_-R15eYdxPVzH2qk', 
         apiKey: 'AIzaSyBWqAADDhcI7E8Q1wy7ETt1I8XkyQ2jUXE',
-        route: '/:Id', //Optional - omit if not using routes
+        // route: '/:Id', //Optional - omit if not using routes
         // type: 'TYPE_NAME', //Optional - default is googleSheet. Used for graphql queries.
     }
   }
-  ]
+  ],
+  templates: {
+    googleSheet: [
+      {
+        path: '/:Id',
+        component: './src/templates/googleSheet.vue'
+      }
+    ]
+  }
 }
